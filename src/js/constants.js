@@ -1,0 +1,1 @@
+export const fetchMealsApi = "http://localhost:5000/api/meals/list";
