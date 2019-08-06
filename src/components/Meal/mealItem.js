@@ -6,7 +6,7 @@ import { fetchMealsApi } from "../../js/constants";
 
 const mapDispatchToProps = dispatch => {
   return {
-    onFetch: () => dispatch(fetchMeals(fetchMealsApi, fetchMealsAction))
+    onFetch: (apiUrl, action) => dispatch(fetchMeals(apiUrl, action))
   };
 };
 const mapStateToProps = state => {
@@ -20,7 +20,7 @@ class MealItem extends Component {
   }
 
   componentDidMount(){
-   this.props.onfetch()
+   this.props.onFetch(fetchMealsApi,fetchMealsAction);
   }
 
   render() {
