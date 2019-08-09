@@ -8,7 +8,6 @@ const composeEnhancers =
     : compose;
 const enhancer = composeEnhancers(
   applyMiddleware(thunk)
-  // other store enhancers if any
 );
 const store = createStore(combineReducers({mealsReducer}), enhancer);
 

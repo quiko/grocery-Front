@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import M from "materialize-css";
 import AuthenticatedLinks from "./authenticatedLinks";
-import PublicLinks from "./publicLinks";
-import "./style.css";
+//import PublicLinks from "./publicLinks";
+import "../../style/navbar.css";
 
 class Navbar extends Component {
   componentDidMount() {
@@ -18,13 +18,12 @@ class Navbar extends Component {
             <i className="material-icons navtext">menu</i>
           </Link>
           <ul className="right hide-on-med-and-down">
+            {/* Since I'm moking the loged in senario */ }
             <AuthenticatedLinks />
-            <PublicLinks />
           </ul>
         </nav>
         <ul className="sidenav" id="mobile-demo">
           <AuthenticatedLinks />
-          <PublicLinks />
         </ul>
       </div>
     );

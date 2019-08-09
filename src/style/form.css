@@ -1,0 +1,10 @@
+@media screen and (min-width: 712px) {
+  .white {
+    border: solid;
+    border-color: #4dff4d;
+    margin-top: 35px;
+    width: 60%;
+    padding: 20px;
+    position: center;
+  }
+}
